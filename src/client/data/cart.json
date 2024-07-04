@@ -1,0 +1,82 @@
+{
+  "cart": {
+    "cart_id": "cart_01G8ZH853Y6TFXWPG5EYE81X63",
+    "customer" : {
+      "id": "cus_01G2SG30J8C85S4A5CHM2S1NS2",
+      "username": "Nandra",
+      "name": "Nkamigbo Sandra",
+      "email": "nandra@gmail.com",
+      "emailVerified": true
+    },
+    "cart_items": [
+      {
+        "id": "ejiwi",
+        "product": {
+          "id": "tyah-838",
+          "name": "White Fleur Pocket Logo T-Shirt",
+          "description": "The adidas sneakers is comfortable, cushioned sole and a breathable upper that keeps your feet cool and dry.",
+          "price": 20000,
+          "quantity": 25,
+          "brand": "Asos",
+          "category": "women",
+          "subcategory": "tops",
+          "condition": "new with tag",
+          "enabled": true,
+          "size": ["38", "39", "40"],
+          "color": ["Blue", "Black", "Red"],
+          "shop": "KiraBoutique"
+        },
+        "quantity": 3,
+        "size": "14",
+        "color": "blue"
+      },
+      {
+        "id": "uey82",
+        "product": {
+          "id": "tyah-838",
+          "name": "White Fleur Pocket Logo T-Shirt",
+          "description": "The adidas sneakers is comfortable, cushioned sole and a breathable upper that keeps your feet cool and dry.",
+          "price": 20000,
+          "quantity": 25,
+          "brand": "Asos",
+          "category": "women",
+          "subcategory": "tops",
+          "condition": "new with tag",
+          "enabled": true,
+          "size": ["38", "39", "40"],
+          "color": ["Blue", "Black", "Red"],
+          "shop": "KiraBoutique"
+        },
+        "quantity": 3,
+        "size": "14",
+        "color": "blue"
+      },
+      {
+        "id": "g73831",
+        "product": {
+          "id": "tyah-838",
+          "name": "White Fleur Pocket Logo T-Shirt",
+          "description": "The adidas sneakers is comfortable, cushioned sole and a breathable upper that keeps your feet cool and dry.",
+          "price": 20000,
+          "quantity": 25,
+          "brand": "Asos",
+          "category": "women",
+          "subcategory": "tops",
+          "condition": "new with tag",
+          "enabled": true,
+          "size": ["38", "39", "40"],
+          "color": ["Blue", "Black", "Red"],
+          "shop": "KiraBoutique"
+        },
+        "quantity": 3,
+        "size": "14",
+        "color": "blue"
+      }
+
+    ],
+    "cart_subtotal": 23000,
+    "cart_taxes": 650,
+    "cart_delivery_fee": 1000,
+    "cart_total": 25000
+  }
+}
