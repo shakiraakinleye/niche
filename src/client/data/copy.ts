@@ -159,7 +159,7 @@ export const supportAvatars = [
 export const BuyerHomePageCopy = {
   heroSection: {
     heading: {
-      normal: "A million shops to choose from - and you only need one",
+      normal: "Hundreds of shops to choose from - and they are all only one",
       italicised: "Niche",
     },
     subheading:

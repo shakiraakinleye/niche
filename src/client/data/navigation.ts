@@ -33,7 +33,7 @@ export const footerNavigation = [
     subitems: [
       {
         title: "Niche",
-        href: "/home",
+        href: "/",
       },
       {
         title: "Policies",
