@@ -1,6 +1,3 @@
-// import "../../globals.css";
-// import "../../customs.css";
-// commented because its present in app layout
 // import { Analytics } from "@vercel/analytics/react";
 
 import cx from "classnames";
@@ -24,9 +21,10 @@ export const metadata = {
     description: "Sell your brand. Sell your products. Buy what you love.",
     creator: "@niche",
   },
-  viewport: {
-    themeColor: "#FFF",
-  },
+};
+
+export const viewport = {
+  themeColor: "#FFF",
 };
 
 export default async function DashboardLayout({
@@ -36,7 +34,6 @@ export default async function DashboardLayout({
 }) {
   return (
     <html lang="en">
-      {/* <SessionProvider> */}
       <OnboardingDataProvider>
         <body
           className={cx(
@@ -58,7 +55,6 @@ export default async function DashboardLayout({
           <ToastWrapper />
         </body>
       </OnboardingDataProvider>
-      {/* </SessionProvider> */}
     </html>
   );
 }

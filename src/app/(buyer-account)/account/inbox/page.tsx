@@ -1,9 +1,11 @@
+"use client";
+
 import { BackButton } from "@/client/components/molecules/common/back-button";
 import { NoNotificationPage } from "@/client/components/organisms/account/no-notification-page";
 import { NotificationCard } from "@/client/components/organisms/account/notification-card";
 import { buyerNotifications } from "@/client/data/sample";
 
-export default async function MyInbox() {
+export default function MyInbox() {
   const listIsEmpty = buyerNotifications.length <= 0;
   return (
     <div className="overflow-hidden">

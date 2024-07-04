@@ -1,9 +1,11 @@
+"use client";
+
 import { BackButton } from "@/client/components/molecules/common/back-button";
 import { NoOrderPage } from "@/client/components/organisms/account/no-order-page";
 import { OrderListCard } from "@/client/components/organisms/account/order-list-card";
 import { buyerOrders } from "@/client/data/sample";
 
-export default async function MyOrders() {
+export default function MyOrders() {
   const ordersArray = Array.from(Object.values(buyerOrders));
   const listIsEmpty = ordersArray.length <= 0;
 

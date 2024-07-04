@@ -1,3 +1,5 @@
+"use client";
+
 import { BackButton } from "@/client/components/molecules/common/back-button";
 import { ProfileSettingsForm } from "@/client/components/molecules/dashboard/forms";
 

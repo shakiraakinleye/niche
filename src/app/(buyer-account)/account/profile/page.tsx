@@ -1,7 +1,9 @@
+"use client";
+
 import { BackButton } from "@/client/components/molecules/common/back-button";
 import { BuyerProfileForm } from "@/client/components/organisms/account/buyer-profile-form";
 
-export default async function MyProfile() {
+export default function MyProfile() {
   return (
     <div className="overflow-hidden">
       <div className="px-4 py-6 md:px-6 lg:hidden">
