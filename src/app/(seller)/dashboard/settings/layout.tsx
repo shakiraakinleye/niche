@@ -13,6 +13,7 @@ import {
 import { settingsPages } from "@/client/data/navigation";
 
 // export const metadata = {
+//   metadataBase: new URL("https://niche.com"),
 //   title: "Niche - Sell your brand. Sell your products. Buy what you love.",
 //   description: "Sell your brand. Sell your products. Buy what you love.",
 //   twitter: {
@@ -21,8 +22,7 @@ import { settingsPages } from "@/client/data/navigation";
 //     description: "Sell your brand. Sell your products. Buy what you love.",
 //     creator: "@niche",
 //   },
-//   // metadataBase: new URL("https://niche.com"),
-//   tviewport: {
+//   viewport: {
 //     themeColor: "#FFF",
 //   },
 // };

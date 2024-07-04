@@ -32,7 +32,7 @@ export const DesktopProductListCard = ({
     >
       <Image src={image1} alt={`${name}-product-image`} className="h-8 w-8" />
       <p className="col-span-2 leading-4">{name}</p>
-      <p>{priceFormatter(price, "", "symbol")}</p>
+      <p>{priceFormatter(price, "symbol")}</p>
       <p>{quantity.toString().padStart(2, "0")}</p>
       <Toggle enabled={isEnabled} onChange={setIsEnabled} />
     </li>

@@ -24,7 +24,7 @@ export const PayoutCard = ({ payout }: { payout: PayoutData }) => {
       <p>
         {dayMonthString}, {year}
       </p>
-      <p>{priceFormatter(price, "", "symbol")}</p>
+      <p>{priceFormatter(price, "symbol")}</p>
       <StatusBadge fulfilled={fulfilled} />
       <LinkButton
         href="#"

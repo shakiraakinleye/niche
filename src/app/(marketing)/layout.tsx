@@ -12,6 +12,7 @@ import { Footer } from "@/components/layout/footer";
 import Nav from "@/components/layout/nav";
 
 export const metadata = {
+  metadataBase: new URL("https://niche.com"),
   title: "Niche - Sell your brand. Sell your products. Buy what you love.",
   description: "Sell your brand. Sell your products. Buy what you love.",
   twitter: {
@@ -20,7 +21,6 @@ export const metadata = {
     description: "Sell your brand. Sell your products. Buy what you love.",
     creator: "@niche",
   },
-  // metadataBase: new URL("https://niche.com"),
   viewport: {
     themeColor: "#FFF",
   },

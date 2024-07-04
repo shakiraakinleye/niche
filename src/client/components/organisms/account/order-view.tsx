@@ -34,7 +34,6 @@ export const OrderView = ({ order }: { order: OrderDataType }) => {
 
   const orderTotal = priceFormatter(
     paymentInformation["total order price"],
-    "",
     "symbol"
   );
   const paymentInformationArray = Array.from(
@@ -78,7 +77,7 @@ export const OrderView = ({ order }: { order: OrderDataType }) => {
                     return (
                       <li key={paymentItem[0]}>
                         {paymentItem[0]}:{" "}
-                        {priceFormatter(paymentItem[1], "", "symbol")}
+                        {priceFormatter(paymentItem[1], "symbol")}
                       </li>
                     );
                   })}
