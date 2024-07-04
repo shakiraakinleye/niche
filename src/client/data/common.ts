@@ -25,6 +25,12 @@ export const waitlistFeatures = [
     description:
       "Put your brand out there! Get connected to wide global audience that increases your sales and brand visibility.",
   },
+  {
+    icon: ShopIcon,
+    heading: "Resell",
+    description:
+      "Make room for new items and get cash in exchange for connecting your fairly or never used items with someone who would love to have them.",
+  },
 ];
 
 export const productCategories: ProductCategoriesType = {
