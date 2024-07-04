@@ -44,6 +44,7 @@ export const ResetPasswordForm: NextPage = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data: ResetPasswordInput) => {
+    console.log("data", data);
     try {
       setIsLoading(true);
       // if (response) {

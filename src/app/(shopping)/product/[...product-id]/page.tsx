@@ -10,7 +10,7 @@ export default function Product() {
   const productsArray = Array.from(productMap.values());
   const product = productsArray[0];
 
-  const { id, name, image1, shop } = product;
+  const { name, image1, shop } = product;
   const images = [image1, image1, image1, image1];
   // todo - fix this - get all images from productData
 

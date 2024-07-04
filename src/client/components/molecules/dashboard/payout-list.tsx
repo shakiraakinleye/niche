@@ -15,7 +15,7 @@ export type PayoutData = {
 
 export const PayoutCard = ({ payout }: { payout: PayoutData }) => {
   const { isDesktop } = useWindowSize();
-  const { id, date, fulfilled, price } = payout;
+  const { date, fulfilled, price } = payout;
 
   const { dayMonthString, year } = dateTimeFormatter(date);
 

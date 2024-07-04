@@ -73,6 +73,7 @@ export const BuyerProfileForm = () => {
   const searchParams = useSearchParams();
 
   const onSubmitHandler = async (data: BuyerProfileInput) => {
+    console.log("data", data);
     setIsLoading(true);
     try {
       // todo - save in db then display alert
@@ -152,7 +153,7 @@ export const BuyerProfileForm = () => {
               <FormField
                 control={control}
                 name="phoneNumber"
-                render={({ field }) => (
+                render={() => (
                   <FormItem className="space-y-2">
                     <FormLabel>Phone Number</FormLabel>
                     <FormControl>
@@ -172,7 +173,7 @@ export const BuyerProfileForm = () => {
               <FormField
                 control={control}
                 name="shippingAddress"
-                render={({ field: { name, onChange, ...props } }) => (
+                render={({ field: { onChange, ...props } }) => (
                   <FormItem className="space-y-2">
                     <FormLabel>Shipping Address</FormLabel>
                     <FormControl>

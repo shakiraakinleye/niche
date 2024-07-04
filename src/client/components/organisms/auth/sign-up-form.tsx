@@ -30,6 +30,7 @@ import { PhoneNumberInput } from "../../molecules/common/phone-number-input";
 import { PasswordRequirementChecklist } from "../../molecules/common/requirement-checklist";
 
 const validateUsernameRefine = async (value: string) => {
+  console.log("value", value);
   // Perform async validation
   // const response = await api.checkUsername.mutate({ username: value });
   // if (!response.data.valid) {
@@ -73,6 +74,7 @@ export const SignUpForm: NextPage = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data: RegisterInput) => {
+    console.log("data", data);
     try {
       setIsLoading(true);
     } catch (e: any) {
@@ -171,7 +173,7 @@ export const SignUpForm: NextPage = () => {
             <FormField
               control={form.control}
               name="phoneNumber"
-              render={({ field }) => (
+              render={() => (
                 <FormItem className="space-y-2">
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>

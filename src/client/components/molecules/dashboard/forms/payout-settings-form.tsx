@@ -34,6 +34,7 @@ export const PayoutSettingsForm = () => {
   const pathname = usePathname();
 
   const onSubmitHandler = async (value: SetupPayoutInput) => {
+    console.log("value", value);
     setIsLoading(true);
     // const data = {
     //   key: "setup-payout",

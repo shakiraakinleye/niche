@@ -9,8 +9,9 @@ export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
   inputClassName?: string;
 };
 
+// ({ className, type, inputClassName, ...props }, ref) => {
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, inputClassName, ...props }, ref) => {
+  ({ type, inputClassName, ...props }, ref) => {
     return (
       <input
         type={type}

@@ -41,7 +41,7 @@ export const storefrontSettingsSchema = object({
 export type StorefrontSettingsInput = TypeOf<typeof storefrontSettingsSchema>;
 
 export const StorefrontSettingsForm = () => {
-  const { shop, editShopName, editAbout, changeImage } = useContext(
+  const { shop, editShopName, editAbout } = useContext(
     ShopContext
   ) as ShopContextType;
 

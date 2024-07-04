@@ -16,7 +16,7 @@ import { CartItemType } from "@/client/types/cart";
 export const CartListItem = ({ cartItem }: { cartItem: CartItemType }) => {
   const { id, name, shop, price, image1, size, color } = cartItem;
   const {
-    updateCartItem,
+    // updateCartItem,
     removeFromCart,
     decreaseCartItemQuantity,
     increaseCartItemQuantity,

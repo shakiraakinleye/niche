@@ -40,7 +40,8 @@ export const OrderListCard = ({
           </span>
         </p>
         <p>{totalQuantity}</p>
-        <p className="col-span-2">{priceFormatter(totalPrice, "", "symbol")}</p>
+        <p className="col-span-2">{priceFormatter(totalPrice)}</p>
+        {/* <p className="col-span-2">{priceFormatter(totalPrice, "", "symbol")}</p> */}
         <StatusBadge fulfilled={fulfilled} className=" col-span-2" />
       </li>
 
