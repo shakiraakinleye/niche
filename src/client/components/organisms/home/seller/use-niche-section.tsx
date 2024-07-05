@@ -42,7 +42,7 @@ export const UseNicheSection = () => {
         <h2 className="text-center font-display text-xl font-medium capitalize leading-11 text-black md:text-2xl lg:text-3xl 2xl:text-4xxl">
           Who can use Niche
         </h2>
-        <div className="flex flex-col gap-5 md:flex-row md:gap-6 2xl:gap-8">
+        <div className="grid gap-5 md:grid-flow-row md:grid-cols-2 md:gap-6 2xl:gap-8">
           <Card
             containerClassName="bg-yellow-1200"
             heading={business.heading}
