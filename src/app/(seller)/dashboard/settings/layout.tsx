@@ -12,21 +12,6 @@ import {
 } from "@/client/components/molecules/dashboard/forms";
 import { settingsPages } from "@/client/data/navigation";
 
-// export const metadata = {
-//   title: "Niche - Sell your brand. Sell your products. Buy what you love.",
-//   description: "Sell your brand. Sell your products. Buy what you love.",
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Niche - Sell your brand. Sell your products. Buy what you love.",
-//     description: "Sell your brand. Sell your products. Buy what you love.",
-//     creator: "@niche",
-//   },
-//   // metadataBase: new URL("https://niche.com"),
-//   tviewport: {
-//     themeColor: "#FFF",
-//   },
-// };
-
 const pageContents = [
   {
     title: "profile",

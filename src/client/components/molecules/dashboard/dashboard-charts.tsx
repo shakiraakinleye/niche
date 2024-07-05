@@ -69,7 +69,7 @@ export const SalesReportChart = ({
         index="date"
         categories={["sales"]}
         colors={["gray"]}
-        valueFormatter={(value) => priceFormatter(value, "", "symbol")}
+        valueFormatter={(value) => priceFormatter(value, "symbol")}
         showYAxis={false}
         showLegend={false}
         connectNulls={true}
@@ -94,7 +94,7 @@ export const SalesByCategoriesChart = ({
         data={data}
         category="sales"
         index="category"
-        valueFormatter={(value) => priceFormatter(value, "", "symbol")}
+        valueFormatter={(value) => priceFormatter(value, "symbol")}
         colors={["blue", "violet", "amber", "rose", "cyan", "gray"]}
       />
       <Legend

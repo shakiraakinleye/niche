@@ -163,7 +163,7 @@ export const DashboardExitNavItems = () => {
         type="button"
         variant="beigeOutline"
         className="border-none p-2 lg:px-4"
-        href="/home"
+        href="/"
       >
         <p className="flex shrink-0 grow items-center gap-2 text-gray-2900">
           <User

@@ -39,7 +39,7 @@ export const OrderItemCard = ({ item }: { item: OrderItem }) => {
         {quantity}
       </p>
       <p className="col-span-1 justify-self-end text-xs leading-4 text-black 2xl:text-sm 2xl:leading-5">
-        {priceFormatter(price * quantity, "", "symbol")}
+        {priceFormatter(price * quantity, "symbol")}
       </p>
     </li>
   );
@@ -101,7 +101,7 @@ export const OrderDisplayCard = ({
             className="hover:bg-primary-100 md:hover:bg-transparent"
             disabled={orderIsFulfilled}
           >
-            <span className="font-default text-xs font-medium leading-4 leading-5 text-white md:group-hover:text-primary-100 2xl:text-sm">
+            <span className="font-default text-xs font-medium leading-4 2xl:leading-5 text-white md:group-hover:text-primary-100 2xl:text-sm">
               Fulfill
             </span>
           </Button>
@@ -120,7 +120,7 @@ export const OrderDisplayCard = ({
             <span>
               Subtotal ({totalQuantity} item{totalQuantity > 1 && "s"})
             </span>
-            <span>{priceFormatter(totalPrice, "", "symbol")}</span>
+            <span>{priceFormatter(totalPrice, "symbol")}</span>
           </p>
         </div>
 

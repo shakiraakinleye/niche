@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
@@ -24,11 +25,11 @@ export default async function OG() {
             "linear-gradient(to right bottom, rgba(225, 225, 225, 0.9), rgba(225, 225, 225, 1)), url('/waitlist-bg-image.jpg')",
         }}
       >
-        {/* <img
+        <Image
           src={new URL("../public/logo.png", import.meta.url).toString()}
           alt="Niche Logo"
           tw="w-20 h-20 mb-4 opacity-95"
-        /> */}
+        />
 
         <h1
           style={{

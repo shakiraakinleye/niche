@@ -149,6 +149,7 @@ export const StartForm: FC<StartFormProps> = ({ nextStep }) => {
             <FormField
               control={form.control}
               name="userCategory"
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
               render={({ field: { name, value, ...props } }) => (
                 <FormItem className="space-y-4">
                   <h3 className="font-default text-xs leading-4 text-gray-1300 md:text-sm md:leading-5 xl:text-base xl:font-medium">
@@ -179,7 +180,7 @@ export const StartForm: FC<StartFormProps> = ({ nextStep }) => {
             <FormField
               control={form.control}
               name="phoneNumber"
-              render={({ field }) => (
+              render={() => (
                 <FormItem className="space-y-2">
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>

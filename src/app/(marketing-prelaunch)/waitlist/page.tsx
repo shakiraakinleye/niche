@@ -40,13 +40,13 @@ export default async function Home() {
               className="animate-fade-up bg-text-backgradient bg-clip-text font-display text-4xl font-medium leading-12 tracking-tighter text-transparent xl:text-5xl xl:leading-16.5"
               style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
             >
-              Make more money selling your brand and closet.
+              Make more money selling your brand and preloved items.
             </h1>
             <h2
               className="w-full animate-fade-up font-default text-base leading-5 tracking-tight text-gray-1000 md:leading-6 xl:text-xl xl:leading-7"
               style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
             >
-              Sell your brand. Sell your products. Buy what you love.
+              Sell your brand. Sell your items. Buy what you love.
             </h2>
           </div>
 

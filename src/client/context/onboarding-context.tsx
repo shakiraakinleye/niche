@@ -26,7 +26,7 @@ type StartOnboardingContextType = {
 
 const initialStartContextValue: StartOnboardingContextType = {
   startData: {},
-  updateStartData: (formName, data) => {},
+  updateStartData: () => {},
 };
 
 const StartOnboardingContext = createContext(initialStartContextValue);
@@ -86,7 +86,7 @@ type SelfServiceOnboardingContextType = {
 
 const initialSelfServiceContextValue: SelfServiceOnboardingContextType = {
   selfServiceData: {},
-  updateSelfServiceData: (formName, data) => {},
+  updateSelfServiceData: () => {},
 };
 
 const SelfServiceOnboardingContext = createContext(
@@ -148,7 +148,7 @@ type ManagedServiceOnboardingContextType = {
 const initialManagedServiceOnboardingContextValue: ManagedServiceOnboardingContextType =
   {
     managedServiceData: {},
-    updateManagedServiceData: (formName, data) => {},
+    updateManagedServiceData: () => {},
   };
 
 const ManagedServiceOnboardingContext = createContext(

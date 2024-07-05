@@ -1,8 +1,3 @@
-import { Suspense } from "react";
-
-import "../globals.css";
-// import "../customs.css";
-// commented because its present in app layout
 // import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
 
@@ -12,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import Nav from "@/components/layout/nav";
 
 export const metadata = {
+  metadataBase: new URL("https://niche.com"),
   title: "Niche - Sell your brand. Sell your products. Buy what you love.",
   description: "Sell your brand. Sell your products. Buy what you love.",
   twitter: {
@@ -20,10 +16,10 @@ export const metadata = {
     description: "Sell your brand. Sell your products. Buy what you love.",
     creator: "@niche",
   },
-  // metadataBase: new URL("https://niche.com"),
-  viewport: {
-    themeColor: "#FFF",
-  },
+};
+
+export const viewport = {
+  themeColor: "#FFF",
 };
 
 export default function RootLayout({
@@ -33,7 +29,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <SessionProvider> */}
       <body
         className={cx(
           "flex min-h-screen flex-col scroll-smooth bg-beige-100",
@@ -42,9 +37,7 @@ export default function RootLayout({
         )}
         suppressHydrationWarning={true}
       >
-        <Suspense fallback="...">
-          <Nav />
-        </Suspense>
+        <Nav />
         <main className="flex w-full flex-col lg:items-center lg:justify-center">
           {children}
         </main>
@@ -52,7 +45,6 @@ export default function RootLayout({
         <ToastWrapper />
         {/* <Analytics /> */}
       </body>
-      {/* </SessionProvider> */}
     </html>
   );
 }

@@ -14,6 +14,7 @@ export const AddProduct = ({
   productData?: ProductType;
 }) => {
   const onSubmit = (data: { key: string; value: object }) => {
+    console.log("data", data);
     // todo - push data to products db
     setShowAddProductForm(false);
     setSelectedProduct(null);

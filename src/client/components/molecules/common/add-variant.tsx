@@ -139,7 +139,7 @@ export const ShowVariantForm = ({
       control={form.control}
       name={selectedVariant}
       defaultValue={[]}
-      render={({ field: { onChange, value, ...props } }) => (
+      render={({ field: { onChange, value } }) => (
         <FormItem className="space-y-4">
           <div className="flex flex-col gap-4">
             <FormLabel>Variant</FormLabel>

@@ -13,7 +13,7 @@ type RadioCardsProps = {
 };
 
 export const RadioCards = ({ options, props }: RadioCardsProps) => {
-  const { onChange, value, name } = props;
+  const { onChange, value } = props;
   const [selectedOption, setSelectedOption] = useState(value);
 
   useEffect(() => {

@@ -75,6 +75,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const cartStorageKey = "niche-cart";
 
   const [storedCart, setStoredCart] = useState(initialCart);
+  console.log("storedCart", storedCart);
   const [cart, cartDispatch] = useReducer(cartReducer, initialCart);
   // change initialcart to storedcart for usereducer only
 

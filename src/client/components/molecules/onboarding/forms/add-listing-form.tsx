@@ -49,8 +49,7 @@ export const AddListingForm: FC<AddListingFormProps> = ({
   const pathname = usePathname();
 
   const { addFirstListingContext } = useOnboardingContext();
-  const { isFirstListingAdded, updateFirstListingAdded } =
-    addFirstListingContext;
+  const { updateFirstListingAdded } = addFirstListingContext;
 
   const form = useForm<NewProductFormInput>({
     resolver: zodResolver(newProductSchema),
@@ -60,6 +59,7 @@ export const AddListingForm: FC<AddListingFormProps> = ({
     form;
 
   const onSubmitHandler = async (value: NewProductFormInput) => {
+    console.log("value", value);
     setIsLoading(true);
     // const data = {
     //   key: "", //generate id to use as key

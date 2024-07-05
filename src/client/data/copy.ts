@@ -10,13 +10,13 @@ import {
 import buyImage from "@/public/buy-callout-image.png";
 import buyerHeroImage from "@/public/home-hero-image.png";
 import managedServiceImage from "@/public/managed-service-image.jpg";
+import userDashboardImage from "@/public/niche_seller_dashboard.png";
 import selfServiceImage from "@/public/self-service-image.jpg";
 import sellImage from "@/public/sell-callout-image.png";
 import sellerHeroImage from "@/public/seller-hero-image.png";
 import avatarImage1 from "@/public/support-avatar-1.jpg";
 import avatarImage2 from "@/public/support-avatar-2.jpg";
 import avatarImage3 from "@/public/support-avatar-3.jpg";
-import userDashboardImage from "@/public/user-dashboard-image.jpg";
 
 export const SellerHomePageCopy = {
   heroSection: {
@@ -34,7 +34,8 @@ export const SellerHomePageCopy = {
     },
     shoppers: {
       heading: "Shoppers",
-      subheading: "Buy items you love from numerous brands on one platform",
+      subheading:
+        "Buy items you love from numerous brands on one platform. Pay only one delivery fee. Buy items you love from numerous brands on one platform.",
       icon: User2,
     },
   },
@@ -159,7 +160,7 @@ export const supportAvatars = [
 export const BuyerHomePageCopy = {
   heroSection: {
     heading: {
-      normal: "A million shops to choose from - and you only need one",
+      normal: "Hundreds of shops to choose from - and they are all only one",
       italicised: "Niche",
     },
     subheading:

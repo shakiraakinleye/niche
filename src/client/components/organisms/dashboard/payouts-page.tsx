@@ -34,7 +34,7 @@ export const PayoutsPageBody = ({
               Total Balance;
             </span>
             <span className="text black font-default text-2xl font-bold leading-6">
-              {priceFormatter(totalBalance, "", "symbol")}
+              {priceFormatter(totalBalance, "symbol")}
             </span>
           </p>
           <Button

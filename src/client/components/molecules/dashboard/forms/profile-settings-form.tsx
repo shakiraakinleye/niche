@@ -67,6 +67,7 @@ export const ProfileSettingsForm = () => {
   const pathname = usePathname();
 
   const onSubmitHandler = async (value: ProfileSettingsInput) => {
+    console.log("value", value);
     setIsLoading(true);
     try {
       // todo - save in db the display alert
@@ -145,7 +146,7 @@ export const ProfileSettingsForm = () => {
             <FormField
               control={control}
               name="phoneNumber"
-              render={({ field }) => (
+              render={() => (
                 <FormItem className="space-y-2">
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
@@ -165,7 +166,7 @@ export const ProfileSettingsForm = () => {
             <FormField
               control={control}
               name="shopContactNumber"
-              render={({ field }) => (
+              render={() => (
                 <FormItem className="space-y-2">
                   <FormLabel>Shop Contact Number</FormLabel>
                   <FormControl>
@@ -185,7 +186,7 @@ export const ProfileSettingsForm = () => {
             <FormField
               control={control}
               name="shippingAddress"
-              render={({ field: { name, onChange, ...props } }) => (
+              render={({ field: { onChange, ...props } }) => (
                 <FormItem className="space-y-2">
                   <FormLabel>Shipping Address</FormLabel>
                   <FormControl>

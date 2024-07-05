@@ -35,10 +35,12 @@ export const VariantModal = ({ product }: { product: ProductType }) => {
     // if quantity >= 1, add to cart and close modal
     // if quantity === 0, just close modal
     addToCart(cartItem);
+    setContinueIsLoading(true);
   };
 
   const proceedToCheckoutHandler = () => {
     addToCart(cartItem);
+    setCheckoutIsLoading(true);
     // if add to cart is successful then open cart
   };
 
@@ -84,7 +86,7 @@ export const VariantModal = ({ product }: { product: ProductType }) => {
           loadingBgColor="current-color"
           loadingTextClassName="text-inherit"
           className="p-2 font-default text-xs font-medium leading-5 text-primary-100 hover:text-white lg:px-3 2xl:py-3 2xl:text-sm"
-          // onClick={}
+          onClick={continueShoppingHandler}
         >
           Continue Shopping
         </Button>
@@ -97,7 +99,7 @@ export const VariantModal = ({ product }: { product: ProductType }) => {
           loadingBgColor="current-color"
           loadingTextClassName="text-inherit"
           className="p-2 font-default text-xs font-medium leading-5 text-white hover:text-primary-100 lg:px-3 2xl:py-3 2xl:text-sm"
-          // onClick={}
+          onClick={proceedToCheckoutHandler}
         >
           Checkout
         </Button>

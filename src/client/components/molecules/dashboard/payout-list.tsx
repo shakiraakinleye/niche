@@ -15,7 +15,7 @@ export type PayoutData = {
 
 export const PayoutCard = ({ payout }: { payout: PayoutData }) => {
   const { isDesktop } = useWindowSize();
-  const { id, date, fulfilled, price } = payout;
+  const { date, fulfilled, price } = payout;
 
   const { dayMonthString, year } = dateTimeFormatter(date);
 
@@ -24,7 +24,7 @@ export const PayoutCard = ({ payout }: { payout: PayoutData }) => {
       <p>
         {dayMonthString}, {year}
       </p>
-      <p>{priceFormatter(price, "", "symbol")}</p>
+      <p>{priceFormatter(price, "symbol")}</p>
       <StatusBadge fulfilled={fulfilled} />
       <LinkButton
         href="#"

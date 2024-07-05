@@ -153,11 +153,12 @@ export const dateTimeFormatter = (date: string) => {
 // };
 
 type CurrencyDisplay = "symbol" | "narrowSymbol" | "code" | "name";
+type CurrencyType = "NGN" | "USD" | "EUR" | "GBP" | "CAD" | "AUD";
 
 export const priceFormatter = (
   price: number,
-  currencyType: string = "NGN",
-  currencyDisplay: CurrencyDisplay = "code"
+  currencyDisplay: CurrencyDisplay = "code",
+  currencyType: CurrencyType = "NGN"
 ): string => {
   const formattedPrice = new Intl.NumberFormat("en-NG", {
     style: "currency",

@@ -1,6 +1,5 @@
-import { Suspense, SVGProps } from "react";
+import { SVGProps } from "react";
 
-// import "../globals.css";
 // import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
 
@@ -8,6 +7,7 @@ import { WaitlistHeader } from "@/client/components/layout/waitlist-header";
 import { playfairDisplay, dmSans } from "@/client/fonts";
 
 export const metadata = {
+  metadataBase: new URL("https://niche.com"),
   title: "Niche - Sell your brand. Sell your products. Buy what you love.",
   description: "Sell your brand. Sell your products. Buy what you love.",
   twitter: {
@@ -16,10 +16,10 @@ export const metadata = {
     description: "Sell your brand. Sell your products. Buy what you love.",
     creator: "@niche",
   },
-  // metadataBase: new URL("https://niche.com"),
-  tviewport: {
-    themeColor: "#FFF",
-  },
+};
+
+export const viewport = {
+  themeColor: "#FFF",
 };
 
 function Footer() {
@@ -112,7 +112,6 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <SessionProvider> */}
       <body
         className={cx(
           "flex min-h-screen flex-col bg-beige-100",
@@ -121,16 +120,12 @@ export default async function RootLayout({
         )}
         suppressHydrationWarning={true}
       >
-        <Suspense fallback="...">
-          <Nav />
-        </Suspense>
+        <Nav />
         <main className="flex w-full flex-col lg:items-center lg:justify-center">
           {children}
         </main>
         <Footer />
-        {/* <Analytics /> */}
       </body>
-      {/* </SessionProvider> */}
     </html>
   );
 }

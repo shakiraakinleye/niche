@@ -48,6 +48,7 @@ export const PasswordSettingsForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data: PasswordSettingsInput) => {
+    console.log("data", data);
     setIsLoading(true);
     try {
       // if (response) {

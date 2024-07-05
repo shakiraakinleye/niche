@@ -22,7 +22,7 @@ const TrackAndButtons = ({
   trackClassName,
   showSlideButtons,
 }: SliderProps) => {
-  const { currentSlideIndex, slides } = useSlider();
+  const { currentSlideIndex } = useSlider();
   const firstSlideVisible = currentSlideIndex === 0;
 
   return (

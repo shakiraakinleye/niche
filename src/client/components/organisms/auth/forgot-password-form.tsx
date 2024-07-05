@@ -35,6 +35,7 @@ export const ForgotPasswordForm: NextPage = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (data: ForgotPasswordInput) => {
+    console.log("data", data);
     try {
       setIsLoading(true);
       // if (response) {
