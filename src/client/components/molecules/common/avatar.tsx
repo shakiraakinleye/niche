@@ -15,7 +15,7 @@ export const Avatar = ({ src, alt, avatarClassName }: AvatarProps) => {
   return (
     <Image
       className={cn(
-        "inline-block h-12 w-12 rounded-full border-1.5 border-white ",
+        "inline-block h-12 w-12 aspect-square object-cover rounded-full border-1.5 border-white ",
         avatarClassName
       )}
       src={src}

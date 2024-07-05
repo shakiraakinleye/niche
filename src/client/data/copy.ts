@@ -34,7 +34,8 @@ export const SellerHomePageCopy = {
     },
     shoppers: {
       heading: "Shoppers",
-      subheading: "Buy items you love from numerous brands on one platform",
+      subheading:
+        "Buy items you love from numerous brands on one platform. Pay only one delivery fee. Buy items you love from numerous brands on one platform.",
       icon: User2,
     },
   },

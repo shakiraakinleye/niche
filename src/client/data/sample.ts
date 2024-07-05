@@ -1,5 +1,6 @@
 import accessoriesImage from "../../public/accessories-category-image.png";
 import bagsImage from "../../public/bags-category-image.png";
+import dressImage from "../../public/dress.png";
 import mensImage from "../../public/mens-category-image.png";
 import productImage from "../../public/product-image.png";
 import womensImage from "../../public/womens-category-image.png";
@@ -1077,10 +1078,10 @@ export const shops: ShopsType = {
     id: "shop-0001",
     isLive: false,
     isProfileComplete: false,
-    image: womensImage,
+    image: dressImage,
     shopName: "KiraBoutique",
     aboutShop:
-      "Our fashion store offers a wide range of trendy and high-quality clothing for men and women. From everyday essentials to statement pieces.",
+      "Our fashion store offers a wide range of trendy and high-quality clothing for women. From everyday essentials to statement pieces.",
   },
   zara: {
     id: "shop-0002",
@@ -1129,10 +1130,10 @@ export const shopProfile = {
   id: "shop-1230",
   isLive: false,
   isProfileComplete: false,
-  image: womensImage,
+  image: dressImage,
   shopName: "KiraBoutique",
   aboutShop:
-    "Our fashion store offers a wide range of trendy and high-quality clothing for men and women. From everyday essentials to statement pieces.",
+    "Our fashion store offers a wide range of trendy and high-quality clothing for women. From everyday essentials to statement pieces.",
 };
 
 export const buyerOrders: BuyerOrdersType = {
