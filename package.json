@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "allowScripts": ["cypress"]
+
   },
   "dependencies": {
     "@faceless-ui/slider": "^1.1.17",
@@ -77,6 +79,7 @@
     "@typescript-eslint/eslint-plugin": "^8.61.0",
     "@typescript-eslint/parser": "^8.61.0",
     "autoprefixer": "10.4.19",
+    "cypress": "^15.17.0",
     "eslint": "^9.39.4",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.2",
