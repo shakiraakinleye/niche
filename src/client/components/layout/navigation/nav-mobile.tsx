@@ -2,7 +2,7 @@
 // import { Session } from "next-auth";
 import React, { Fragment, useState, useContext } from "react";
 
-import { Transition, Dialog } from "@headlessui/react";
+import { Transition, TransitionChild, Dialog } from "@headlessui/react";
 import { Menu } from "lucide-react";
 
 import { productCategories } from "@/client/data/common";
@@ -63,7 +63,7 @@ export const NavMobile = ({ session }: { session: any }) => {
           className="relative z-30 lg:hidden"
           onClose={closeMainMenu}
         >
-          <Transition.Child
+          <TransitionChild
             as={Fragment}
             enter="ease-out duration-500"
             enterFrom="opacity-0"
@@ -73,11 +73,11 @@ export const NavMobile = ({ session }: { session: any }) => {
             leaveTo="opacity-0"
           >
             <div className="fixed inset-0 bg-gray-100 bg-opacity-10 backdrop-blur" />
-          </Transition.Child>
+          </TransitionChild>
 
           <div className="fixed inset-0 overflow-y-auto ">
             <div className="h-full">
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter="ease-out duration-500"
                 enterFrom="-translate-x-full"
@@ -93,7 +93,7 @@ export const NavMobile = ({ session }: { session: any }) => {
                     closeMenu={closeMainMenu}
                   />
                 </Dialog.Panel>
-              </Transition.Child>
+              </TransitionChild>
             </div>
           </div>
         </Dialog>

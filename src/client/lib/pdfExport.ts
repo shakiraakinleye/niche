@@ -7,6 +7,11 @@ export const pdfExport = async (chartId: string) => {
   const html2pdf = await import("html2pdf.js");
   const pdf = new html2pdf.default();
   const chart = document.getElementById(chartId);
+
+  if (!chart) {
+    console.error("chart is null.");
+    return;
+  }
   pdf.from(chart).save(`${chartId}-niche.pdf`);
 };
 

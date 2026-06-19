@@ -67,7 +67,7 @@ export const ProductCard = ({ product, className }: ProductCardProps) => {
               leave="transition-transform duration-150 ease-out"
               leaveFrom="translate-y-0"
               leaveTo="translate-y-3/4"
-              className="absolute inset-x-0 bottom-0 z-10 flex"
+              // className="absolute inset-x-0 bottom-0 z-10 flex"
             >
               <div className="grow bg-black/70 pb-2 pl-2 pt-1 lg:pl-3 lg:pt-1.5 2xl:pl-5 2xl:pt-2">
                 {size && (

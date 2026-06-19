@@ -46,7 +46,7 @@ const TrackAndButtons = ({
             leave="transition duration-100 ease-out"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-50 scale-75"
-            className="absolute left-8 top-1/3 z-20 md:left-12 lg:left-25"
+            // className="absolute left-8 top-1/3 z-20 md:left-12 lg:left-25"
           >
             <SliderButton
               direction="prev"
