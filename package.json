@@ -98,6 +98,7 @@
     "overrides": {
       "postcss": "^8.5.23",
       "sharp": "0.32.6"
-    }
+    },
+    "onlyBuiltDependencies": ["sharp"]
   }
 }
